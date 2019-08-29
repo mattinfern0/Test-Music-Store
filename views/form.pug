@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    section
+        h1 Reserve a Room
+        form(
+            method="POST"
+            action="/new"
+        )
+            input(type="text" placeholder="First Name" name="firstname")#firstname
+            input(type="text" placeholder="Last Name" name="lastname")#lastname
+            input(type="time"  name="time")#time
+            input(type="submit" value="Create Reservation")
+        

@@ -2,7 +2,16 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/header.css')
+    block head
   body
-    block header
+    header
+      nav
+        ul
+          li
+            a(id='logo', href='/') JAK's 
+          each l in navigation
+            li
+              a(href=l.link) #{l.text}
+          
     block content
