@@ -21,6 +21,7 @@ router.use(function (req, res, next){
 
 router.get('/', function(req, res, next) {
   res.render('index');
+  console.log("Index served");
 });
 
 router.get('/reserve', function(req, res, next){
